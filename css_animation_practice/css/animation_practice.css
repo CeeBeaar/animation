@@ -1,0 +1,111 @@
+html,body {
+	width: 100%;
+	height: 100%;
+}
+
+.grid_container {
+	width: 400px;
+	height: 100px;
+	position: relative;
+	left: 50%;
+	top: 48%;
+	margin-top: -50px;
+	margin-left: -100px;
+}
+
+.main {
+	font-family: 'Arial';
+	font-size: 4em;
+	float: left;
+	margin-left: 5px;
+}
+
+@keyframes i_move {
+	0% { top: 0px; left: 0px; }
+	50% { top: -150px; left: 35px; }
+	75% { top: -75px; left: 35px; }
+	90% { top: -15px; left: 35px; }
+	100% { left: 35px; color: red; }
+}
+
+.i {
+	animation: i_move 2s linear infinite;
+	color: blue;
+	animation-fill-mode: forwards;
+	position: relative;
+	animation-delay: 1s;
+}
+
+@keyframes c_move {
+	0% { top: 0px; left: 0px; }
+	50% { top: 150px; left: -38px; }
+	100% { left: -38px; }
+}
+
+.c {
+	color: red;
+	animation: c_move 2s ease infinite;
+	animation-fill-mode: forwards;
+	position: relative;
+	animation-delay: 1s;
+}
+
+@keyframes e_move {
+	0% { top: 0px; left: 0px; }
+	50% { left: 10px; }
+	100% { left: 22px; color: red; }
+}
+
+.e {
+	color: green;
+	animation: e_move 2s linear infinite;
+	animation-fill-mode: forwards;
+	position: relative;
+	animation-delay: 1s;
+}
+
+@keyframes m_move {
+	0% { top: 0px; left: 0px; }
+	50% { top: 50px; left: 7px; }
+	100% { top: 0px; left: 15px; color: red; }
+}
+
+.m {
+	color: black;
+	animation: m_move 2s linear infinite;
+	animation-fill-mode: forwards;
+	position: relative;
+	animation-delay: 1s;
+}
+
+@keyframes a_move {
+	0% { top: 0px; left: 0px; }
+	20% { top: -200px; left: 0px; }
+	40% { top: -200px; left: -300px; }
+	60% { top: 200px; left: -300px; }
+	80% { top: 200px; left: 7px; }
+	100% { top: 0px; left: 15px; color: red; }
+}
+
+.a {
+	color: purple;
+	animation: a_move 2s ease-out infinite;
+	animation-fill-mode: forwards;
+	position: relative;
+	animation-delay: 1s;
+}
+
+@keyframes n_move {
+	0% { opacity: 0; }
+	50% { opacity: 0; }
+	75% { opacity: 0; }
+	100% { left: -175px; color: red; }
+}
+
+.n {
+	color: yellow;
+	animation: n_move 2s linear infinite;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+	position: relative;
+}
